@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bmerah"
+    tools:context="com.mobile.yulihasni.apphotel.Profil">
+
+
+    <TextView
+        android:id="@+id/txtProfil"
+        android:textColor="@color/white"
+        android:text="Profil Hotel"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:id="@+id/tbl3"
+        android:layout_below="@+id/txtProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/txtTelp"
+                android:textColor="@color/white"
+                android:text="Telepon "
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtNoTelp"
+                android:textColor="@color/white"
+                android:text="081364258937"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/txtTelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txtWeb"
+                android:textColor="@color/white"
+                android:text="WEB "
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtSitusWeb"
+                android:textColor="@color/white"
+                android:text="www.hotel_Princess.co.id"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/txtTelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/tbl4"
+        android:layout_below="@+id/tbl3"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/txtSosmed"
+                android:textColor="@color/white"
+                android:text="Sosial Media"
+                android:layout_marginTop="30dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtFb"
+                android:text="Facebook"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <TextView
+                android:id="@+id/txtNamaFb"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="princess.hotel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtTwit"
+                android:text="Twitter"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <TextView
+                android:id="@+id/txtNamaTwit"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="princess_hotell27"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtWA"
+                android:textColor="@color/white"
+                android:text="Whatsapp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <TextView
+                android:id="@+id/txtNamaWa"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="081289176237"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

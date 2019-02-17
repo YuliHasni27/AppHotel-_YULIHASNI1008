@@ -1,0 +1,153 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bmerah"
+    >
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bmerah"
+    tools:context="com.mobile.yulihasni.apphotel.PesanActivity">
+
+    <TextView
+        android:id="@+id/txtCariHotel"
+        android:text="Pesan Hotel"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtNoKamar"
+        android:text="No Booking"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/txtCariHotel"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editNoBooking"
+        android:layout_below="@+id/txtNoKamar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:layout_marginTop="60dp"
+        android:id="@+id/tbl1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txtChekIn"
+                android:text="@string/chek_in"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="80dp"
+                android:layout_below="@+id/editNoBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/txtLamaInap"
+                android:text="@string/lama_inap"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="80dp"
+                android:layout_below="@+id/editChekIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/editChekIn"
+                android:layout_marginRight="15dp"
+                android:layout_below="@+id/txtChekIn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/editLamaInap"
+                android:layout_below="@+id/txtLamaInap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txtTotalTamu"
+        android:textColor="@color/white"
+        android:text="@string/byk_tamu"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tbl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTotTamu"
+        android:layout_below="@+id/txtTotalTamu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtKamar"
+        android:textColor="@color/white"
+        android:text="@string/kamar"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/editTotTamu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editKamar"
+        android:layout_below="@+id/txtKamar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+
+        android:textColor="@color/white"
+        android:id="@+id/spinner2"
+        android:layout_below="@+id/editKamar"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </Spinner>
+    <Button
+        android:id="@+id/btnPesanHotel"
+        android:text="Pesan"
+        android:textColor="@color/red"
+        android:layout_below="@id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,351 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bmerah"
+    >
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bmerah"
+    tools:context="com.mobile.yulihasni.apphotel.Restaurant">
+
+    <TextView
+        android:text="Restaurant"
+        android:id="@+id/txtRestaurant"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/txtNo"
+        android:text="@string/nomor"
+        android:textColor="@color/white"
+        android:layout_below="@+id/txtRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editNo"
+        android:layout_below="@+id/txtNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtNama"
+        android:text="@string/nama"
+        android:textColor="@color/white"
+        android:layout_below="@+id/editNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_below="@+id/txtNama"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtMeja"
+        android:layout_below="@+id/editNama"
+        android:text="@string/meja"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editMeja"
+        android:layout_below="@id/txtMeja"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtPesanan"
+        android:text="Pesanan"
+        android:layout_below="@+id/editMeja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TableLayout
+        android:id="@+id/tbl1"
+        android:layout_below="@+id/txtPesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <RadioGroup
+            android:id="@+id/rgPesan"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton
+                android:id="@+id/rbBreakfast"
+                android:text="@string/breakfast"
+                android:textColor="@color/white"
+                android:layout_below="@+id/rgPesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rbLunch"
+                android:text="Lunch"
+                android:textColor="@color/white"
+                android:layout_below="@+id/rbBreakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rbDinner"
+                android:text="Dinner"
+                android:textColor="@color/white"
+                android:layout_below="@+id/rbLunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtJenisMakanan"
+                android:text="Jenis Makanan"
+                android:textColor="@color/white"
+                android:layout_below="@+id/tbl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtJumlahPertama"
+                android:text="Jumlah"
+                android:textColor="@color/white"
+                android:paddingLeft="25dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <TextView
+                android:id="@+id/txtHargaPertama"
+                android:text="Harga"
+                android:textColor="@color/white"
+                android:paddingLeft="40dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/cboBakso"
+                android:text="Bakso"
+                android:textColor="@color/white"
+                android:layout_below="@id/txtJenisMakanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/editJumlah1"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"/>
+            <EditText
+                android:id="@+id/editHarga1"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/cboNasgor"
+                android:text="Nasi Goreng"
+                android:textColor="@color/white"
+                android:layout_below="@+id/cboBakso"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <EditText
+                android:id="@+id/editJumlah2"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"/>
+            <EditText
+                android:id="@+id/editHarga2"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/cboMie"
+                android:text="Aneka Mie"
+                android:textColor="@color/white"
+                android:layout_below="@+id/cboNasgor"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <EditText
+                android:id="@+id/editJumlah3"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"/>
+            <EditText
+                android:id="@+id/editHarga3"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtJenisMinuman"
+                android:text="Jenis Minuman"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <TextView
+                android:id="@+id/txtJumlahKedua"
+                android:text="Jumlah"
+                android:textColor="@color/white"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <TextView
+                android:id="@+id/txtHargaKedua"
+                android:text="Harga"
+                android:textColor="@color/white"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/cboJus"
+                android:text="Aneka Jus"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <EditText
+                android:id="@+id/editJumlah4"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"/>
+            <EditText
+                android:id="@+id/editHarga4"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/cboEsTeh"
+                android:textColor="@color/white"
+                android:text="Es Teh"
+                android:layout_below="@+id/cboJus"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <EditText
+                android:id="@+id/editJumlah5"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"/>
+            <EditText
+                android:id="@+id/editHarga5"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/cboEsCream"
+                android:textColor="@color/white"
+                android:text="Es Cream"
+                android:layout_below="@+id/cboEsTeh"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <EditText
+                android:id="@+id/editJumlah6"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"/>
+            <EditText
+                android:id="@+id/editHarga6"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/btnProses"
+        android:text="Proses"
+        android:layout_below="@+id/tbl1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" />
+    <TextView
+        android:id="@+id/txtTotalMakanan"
+        android:text="Total Makanan"
+        android:textColor="@color/white"
+        android:layout_below="@+id/btnProses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editTotalMakanan"
+        android:layout_below="@+id/txtTotalMakanan"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <TextView
+        android:id="@+id/txtTotalMinuman"
+        android:text="Total Minuman"
+        android:layout_below="@+id/editTotalMakanan"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editTotalMinuman"
+        android:layout_below="@+id/txtTotalMinuman"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <TextView
+        android:id="@+id/txtTotal"
+        android:textColor="@color/white"
+        android:text="Total"
+        android:layout_below="@+id/editTotalMinuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editTotal"
+        android:layout_below="@+id/txtTotal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <TextView
+        android:id="@+id/txtPajak"
+        android:textColor="@color/white"
+        android:text="Pajak"
+        android:layout_below="@+id/editTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editPajak"
+        android:layout_below="@+id/txtPajak"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/txtDiskon"
+        android:text="Diskon"
+        android:layout_below="@+id/editPajak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editDiskon"
+        android:layout_below="@+id/txtDiskon"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <TextView
+        android:id="@+id/txtBayar"
+        android:textColor="@color/white"
+        android:text="Bayar"
+        android:layout_below="@+id/editDiskon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editBayar"
+        android:layout_below="@+id/txtBayar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <TextView
+        android:id="@+id/txtDetail"
+        android:textColor="@color/white"
+        android:text="Detail"
+        android:layout_below="@+id/editBayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtOutput"
+        android:layout_below="@+id/txtDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+</ScrollView>
